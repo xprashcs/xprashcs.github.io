@@ -3,61 +3,215 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="abc user — Senior System Administrator, DevOps, AWS. Minimal profile." />
+    <meta name="description" content="xPCS - Senior System Administrator | DevOps | AWS" />
     <meta name="theme-color" content="#081226" />
-    <title>abc user — Profile</title>
+    <title>xPCS | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="bg-decor"></div>
 
-    <main class="stage">
-      <section class="card">
-        <div class="left">
-          <div class="image-wrap" aria-hidden="false">
-            <!-- Stylized avatar SVG (initials) -->
-            <svg class="avatar-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PCS">
-              <defs>
-                <linearGradient id="g1" x1="0" x2="1">
-                  <stop offset="0" stop-color="#ff7ab6" />
-                  <stop offset="1" stop-color="#7c3aed" />
-                </linearGradient>
-                <filter id="f" x="-40%" y="-40%" width="180%" height="180%">
-                  <feGaussianBlur stdDeviation="8" result="b" />
-                  <feComposite in="SourceGraphic" in2="b" operator="over" />
-                </filter>
-              </defs>
-              <rect width="200" height="200" rx="28" fill="url(#g1)" />
-              <g transform="translate(0,10)" fill="rgba(255,255,255,0.06)" filter="url(#f)">
-                <ellipse cx="60" cy="40" rx="40" ry="18" />
-                <ellipse cx="140" cy="160" rx="60" ry="30" />
-              </g>
-              <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto" font-size="64" fill="white" font-weight="700">PCS</text>
-            </svg>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">xPCS</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-            <div class="blob blob-a"></div>
-            <div class="blob blob-b"></div>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-image">
+              <div class="image-wrap">
+                <svg class="avatar-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PCS">
+                  <defs>
+                    <linearGradient id="g1" x1="0" x2="1">
+                      <stop offset="0" stop-color="#ff7ab6" />
+                      <stop offset="1" stop-color="#7c3aed" />
+                    </linearGradient>
+                    <filter id="f" x="-40%" y="-40%" width="180%" height="180%">
+                      <feGaussianBlur stdDeviation="8" result="b" />
+                      <feComposite in="SourceGraphic" in2="b" operator="over" />
+                    </filter>
+                  </defs>
+                  <rect width="200" height="200" rx="28" fill="url(#g1)" />
+                  <g transform="translate(0,10)" fill="rgba(255,255,255,0.06)" filter="url(#f)">
+                    <ellipse cx="60" cy="40" rx="40" ry="18" />
+                    <ellipse cx="140" cy="160" rx="60" ry="30" />
+                  </g>
+                  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, system-ui" font-size="64" fill="white" font-weight="700">xPCS</text>
+                </svg>
+                <div class="blob blob-a"></div>
+                <div class="blob blob-b"></div>
+              </div>
+            </div>
+            <div class="hero-text">
+              <h1 class="name">Hi, I'm <span class="highlight">xPCS</span></h1>
+              <p class="role">Senior System Administrator | DevOps Engineer | AWS Solutions Architect</p>
+              <p class="bio">Building scalable infrastructure and automating the future. Specialized in cloud migrations, CI/CD pipelines, and high-availability systems.</p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="right">
-          <h1 class="role">Senior System Administrator | DevOps | AWS</h1>
-          <div class="contact">
-            <a class="social" href="https://github.com/abcuser" aria-label="GitHub" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.57.23 2.73.11 3.02.74.8 1.19 1.82 1.19 3.07 0 4.4-2.7 5.37-5.27 5.65.42.36.79 1.07.79 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-            </a>
-            <a class="social" href="https://twitter.com/abcuser" aria-label="Twitter" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23 4.56c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.14 12.14 0 0 1 3.15 3.1a4.28 4.28 0 0 0 1.32 5.72c-.66-.02-1.28-.2-1.82-.5v.05a4.28 4.28 0 0 0 3.43 4.2c-.52.14-1.07.17-1.63.06a4.28 4.28 0 0 0 4 2.97A8.58 8.58 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.7 8.7 0 0 0 23 4.56z"/></svg>
-            </a>
-            <a class="social" href="https://linkedin.com/in/abcuser" aria-label="LinkedIn" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-.01 0zM3 6.9H7v13H3v-13zM9 6.9h3.7v1.74h.05c.52-.99 1.8-2.03 3.7-2.03 3.96 0 4.7 2.61 4.7 6v7.29H17v-6.45c0-1.54-.03-3.52-2.15-3.52-2.15 0-2.48 1.67-2.48 3.4v6.57H9v-13z"/></svg>
-            </a>
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-card">
+              <p>With over 10 years of experience in system administration and DevOps, I have helped numerous organizations scale their infrastructure and streamline their deployment processes. I'm passionate about open-source technologies and staying at the forefront of cloud innovation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Cloud & Infrastructure</h3>
+              <ul>
+                <li>AWS (EC2, S3, RDS, Lambda)</li>
+                <li>Terraform / CloudFormation</li>
+                <li>Kubernetes (EKS, Self-hosted)</li>
+                <li>Docker & Containerization</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>DevOps & CI/CD</h3>
+              <ul>
+                <li>Jenkins / GitHub Actions</li>
+                <li>Ansible / Chef / Puppet</li>
+                <li>Monitoring (Prometheus, Grafana)</li>
+                <li>Logging (ELK Stack, Splunk)</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>System Admin</h3>
+              <ul>
+                <li>Linux (RHEL, Ubuntu, CentOS)</li>
+                <li>Networking & Security</li>
+                <li>Database Admin (MySQL, PostgreSQL)</li>
+                <li>Shell Scripting (Bash, Python)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-content">
+                <h3>AutoScale Infrastructure</h3>
+                <p>Designed and implemented a fully automated, auto-scaling AWS infrastructure for a high-traffic e-commerce platform.</p>
+                <div class="project-tags">
+                  <span>AWS</span><span>Terraform</span><span>Ansible</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Global K8s Migration</h3>
+                <p>Led the migration of legacy monolithic applications to a global Kubernetes cluster, reducing deployment time by 70%.</p>
+                <div class="project-tags">
+                  <span>Kubernetes</span><span>Docker</span><span>Jenkins</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Security Hardening Tool</h3>
+                <p>Developed an internal tool for automated security compliance checks across multi-cloud environments.</p>
+                <div class="project-tags">
+                  <span>Python</span><span>Security</span><span>Compliance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2021 - Present</div>
+              <div class="timeline-content">
+                <h3>Senior DevOps Engineer</h3>
+                <p class="company">Tech Innovators Corp</p>
+                <p>Optimizing CI/CD workflows and managing multi-region AWS infrastructure.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2018 - 2021</div>
+              <div class="timeline-content">
+                <h3>System Administrator</h3>
+                <p class="company">Global Systems Inc</p>
+                <p>Managed 500+ Linux servers and implemented automated monitoring solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="contact-content">
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            <div class="social-links">
+              <a class="social" href="https://github.com/abcuser" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.57.23 2.73.11 3.02.74.8 1.19 1.82 1.19 3.07 0 4.4-2.7 5.37-5.27 5.65.42.36.79 1.07.79 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+              </a>
+              <a class="social" href="https://twitter.com/abcuser" aria-label="Twitter" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M23 4.56c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.14 12.14 0 0 1 3.15 3.1a4.28 4.28 0 0 0 1.32 5.72c-.66-.02-1.28-.2-1.82-.5v.05a4.28 4.28 0 0 0 3.43 4.2c-.52.14-1.07.17-1.63.06a4.28 4.28 0 0 0 4 2.97A8.58 8.58 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.7 8.7 0 0 0 23 4.56z"/></svg>
+              </a>
+              <a class="social" href="https://linkedin.com/in/abcuser" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-.01 0zM3 6.9H7v13H3v-13zM9 6.9h3.7v1.74h.05c.52-.99 1.8-2.03 3.7-2.03 3.96 0 4.7 2.61 4.7 6v7.29H17v-6.45c0-1.54-.03-3.52-2.15-3.52-2.15 0-2.48 1.67-2.48 3.4v6.57H9v-13z"/></svg>
+              </a>
+            </div>
+            <a href="mailto:contact@xpcs.dev" class="btn btn-primary mt-2">Email Me Directly</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="credit">Made with ❤️</footer>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 xPCS. Built with passion and modern web technologies.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
   </body>
 </html>
